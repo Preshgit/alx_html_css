@@ -4,6 +4,16 @@
   font-family: "sans-serif";
   box-sizing: border-box;
 }
+
+body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensures minimum height of viewport */
+  margin: 0; /* Removes default margin */
+  padding: 0; /* Removes default padding */
+}
+
 .nav {
   display: flex;
   flex-direction: row;
@@ -11,7 +21,6 @@
   padding-right: 80px;
   padding-left: 80px;
   padding-top: 20px;
-  background-color: black;
 }
 
 ul {
@@ -66,13 +75,24 @@ h1 {
 }
 
 .register {
-  background-color: #dc5cec;
+  background-color: #e72fff;
   border: none;
   border-radius: 15px;
   padding: 10px;
   cursor: pointer;
   color: white;
 }
+
+.purpleSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e72fff;
+  border: none;
+  padding: 80px 0; /* Add vertical padding */
+  width: 100%;
+}
+
 /* style.css */
 /* :root {
   --primary-color: #c271ff;
