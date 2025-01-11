@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.image {
+  width: 90%; /* Default for mobile */
+  height: auto;
+  max-width: 100%; /* Prevents image from overflowing */
+}
+
+/* Tablet screens */
+@media screen and (min-width: 768px) {
+  .image {
+    width: 70%; /* Slightly smaller on tablets */
+  }
+}
+
+/* Laptop/Desktop screens */
+@media screen and (min-width: 1024px) {
+  .image {
+    width: 20%; /* Even smaller on larger screens */
+  }
+}
