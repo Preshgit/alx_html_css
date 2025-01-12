@@ -46,19 +46,18 @@ nav a {
 /* Hero Content */
 .hero-section {
   max-width: 1200px;
-  margin: 100px auto 0;
+  margin: 300px auto 0;
   text-align: center;
   padding: 0 20px;
 }
 
 .hero-section h1 {
   font-size: 32px;
-  margin-bottom: 20px;
 }
 
 .hero-section p {
-  max-width: 600px;
-  margin: 20px auto;
+  max-width: 700px;
+  margin: 5px auto;
   line-height: 1.6;
 }
 
@@ -70,7 +69,7 @@ button {
   border-radius: 25px;
   cursor: pointer;
   font-weight: bold;
-  margin: 40px 0;
+  margin: 30px 0;
 }
 
 /* What We Do Section */
@@ -225,12 +224,27 @@ button {
 
 /* Footer */
 footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background: #071629;
   color: white;
   padding: 40px 20px;
   text-align: center;
 }
 
+footer p {
+  margin-top: 20px;
+  color: lightblue;
+}
+.footer-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+footer img {
+  height: 32px;
+}
 .social-link {
   margin: 20px 0;
 }
