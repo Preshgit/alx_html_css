@@ -2,24 +2,260 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
 
-.image {
-  width: 90%; /* Default for mobile */
+/* Header/Hero Section */
+.hero-piece {
+  width: 100%;
+  height: 800px; /* Increased height to match design */
+  background-image: url("images/headphones_hero_1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  padding: 20px 0;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+nav img {
+  height: 32px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+/* Hero Content */
+.hero-section {
+  max-width: 1200px;
+  margin: 100px auto 0;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.hero-section h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.hero-section p {
+  max-width: 600px;
+  margin: 20px auto;
+  line-height: 1.6;
+}
+
+button {
+  background-color: #ff6565;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  margin: 40px 0;
+}
+
+/* What We Do Section */
+.what-we-do {
+  padding: 80px 20px;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.row-list {
+  margin-top: 60px;
+}
+
+.row-list > div {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  margin-top: 40px;
+}
+
+/* SVG Icons */
+[class^="holberton_school-icon-"] {
+  font-size: 100px;
+  color: #ff6565;
+  margin-bottom: 20px;
+}
+
+/* Our Results Section */
+.Our-results {
+  width: 100%;
+  min-height: 650px;
+  background-image: url("images/headphones_hero_2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+.Our-results > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Improve pentagon positioning */
+.Our-results .image {
+  width: 100%;
   height: auto;
-  max-width: 100%; /* Prevents image from overflowing */
 }
 
-/* Tablet screens */
-@media screen and (min-width: 768px) {
-  .image {
-    width: 70%; /* Slightly smaller on tablets */
+/* .Our-results .image {
+  width: 190px;
+  position: relative;
+} */
+
+.Our-results .pentagon-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.Our-results h2 {
+  font-size: 46px;
+  margin: 0;
+  color: white;
+}
+
+.Our-results .pentagon-content p {
+  margin: 0;
+  font-size: 14px;
+  color: white;
+}
+
+.Our-results p {
+  max-width: 600px;
+  margin: 0 auto 60px;
+  line-height: 1.6;
+}
+
+.Our-results > div > div {
+  position: relative;
+  text-align: center;
+  width: 190px;
+}
+
+/* .Our-results h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 46px;
+  margin: 0;
+  color: white;
+} */
+
+.Our-results div p {
+  margin-top: 20px;
+  font-size: 14px;
+}
+/* contact form */
+.contact-form {
+  text-align: center;
+  padding: 60px 20px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.contact-form h2 {
+  margin-bottom: 40px;
+  font-size: 32px;
+  color: #071629;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-bottom: 1px solid #071629;
+  outline: none;
+  font-size: 16px;
+}
+
+.form-group input::placeholder {
+  color: #071629;
+}
+
+.contact-form button {
+  background-color: #ff6565;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.contact-form button:hover {
+  opacity: 0.9;
+}
+
+/* Footer */
+footer {
+  background: #071629;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.social-link {
+  margin: 20px 0;
+}
+
+.social-link a {
+  margin: 0 10px;
+}
+
+.social-link img {
+  height: 24px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .row-list > div {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  nav ul {
+    display: none;
   }
 }
 
-/* Laptop/Desktop screens */
-@media screen and (min-width: 1024px) {
-  .image {
-    width: 20%; /* Even smaller on larger screens */
+@media (max-width: 480px) {
+  .row-list > div {
+    grid-template-columns: 1fr;
   }
 }
