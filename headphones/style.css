@@ -91,11 +91,9 @@ button {
   margin-top: 40px;
 }
 
-/* SVG Icons */
-[class^="holberton_school-icon-"] {
-  font-size: 100px;
-  color: #ff6565;
-  margin-bottom: 20px;
+.image-scale {
+  height: 48px;
+  margin-bottom: 30px;
 }
 
 /* Our Results Section */
